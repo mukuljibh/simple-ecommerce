@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="w-screen h-14 bg-gray-900 flex justify-center ">
+    <div class="h-14 w-3/12 flex">
+      <img class="h-7 self-center" src="https://zimeshare.com/zimeshare.png">
+    </div>
+
+
+    <div class="h-14 w-7/12 flex justify-center">
+      <div class="h-10 w-14 self-center bg-zinc-200 rounded-l-sm flex justify-center">
+        <svg class="self-center cursor-pointer " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-caret-down">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M18 9c.852 0 1.297 .986 .783 1.623l-.076 .084l-6 6a1 1 0 0 1 -1.32 .083l-.094 -.083l-6 -6l-.083 -.094l-.054 -.077l-.054 -.096l-.017 -.036l-.027 -.067l-.032 -.108l-.01 -.053l-.01 -.06l-.004 -.057v-.118l.005 -.058l.009 -.06l.01 -.052l.032 -.108l.027 -.067l.07 -.132l.065 -.09l.073 -.081l.094 -.083l.077 -.054l.096 -.054l.036 -.017l.067 -.027l.108 -.032l.053 -.01l.06 -.01l.057 -.004l12.059 -.002z" />
+        </svg>
+      </div>
+
+      <input type="text" id="myInput" placeholder="Search..." class="h-10 w-10/12 self-center outline-0 pl-3">
+      </input>
+
+      <div class="h-10 w-12 self-center bg-orange-300 rounded-r-sm flex justify-center">
+        <svg class="self-center cursor-pointer " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+          <path d="M21 21l-6 -6" />
+        </svg>
+      </div>
+
+    </div>
+    <div class="h-14 w-3/12 flex gap-9 justify-center">
+      <div class="text-white self-center">
+        <p class="text-xs font-bold">Hello, sign in</p>
+        <p class="text-sm font-bold">Accounts & Lists</p>
+      </div>
+      <div class="text-white self-center">
+        <p class="text-xs font-bold">Return</p>
+        <p class="text-sm font-bold">& Orders</p>
+      </div>
+      <svg class="self-center" xmlns="http://www.w3.org/2000/svg" height="40" width="35"
+        viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path fill="#ffffff"
+          d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+      </svg>
+
+    </div>
+  </div>
+
+  <div id="target" class="border-2 border-slate-900 flex flex-wrap pt-7 gap-3">
+    
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
