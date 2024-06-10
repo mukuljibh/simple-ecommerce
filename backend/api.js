@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
-import { productDetails } from "./src/model.js"
+import { productDetails } from "./backend/model.js"
 import cors from "cors";
 
 const app = express();
