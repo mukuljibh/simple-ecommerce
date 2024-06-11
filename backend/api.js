@@ -3,6 +3,9 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import { productDetails } from "./model.js"
 import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config({ path: "sensitive.env" });
+
 
 const app = express();
 const port = 3000;
@@ -10,7 +13,7 @@ app.use(bodyParser.json());
 app.use(cors()); //for cross generation support
 
 app.use(bodyParser.urlencoded({ extended: true })); // middleware which fetches the form data
-const CONNNECTIONSTRING = "mongodb+srv://mukul:8368555400@dribbblecluster.xnwg76a.mongodb.net/productDB?retryWrites=true&w=majority&appName=dribbblecluster";
+const CONNNECTIONSTRING = process.env.DB_CONNECTION_STRING
 function connectToDatabase() {
     //make sure that server open only when database is available
     return new Promise((resolve, reject) => {
@@ -27,7 +30,7 @@ function connectToDatabase() {
 }
 
 app.get("/search", (req, res) => {
-    const searchString = req.query.qwery
+    const searchString = req.query.query
     const regex = new RegExp(searchString, 'i'); // 'i' makes it case-insensitive
     productDetails.find({ Description: regex })
         .then((data) => {

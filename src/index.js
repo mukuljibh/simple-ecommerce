@@ -3,7 +3,7 @@ const target = document.getElementById("target")
 input.addEventListener("input", (event) => {
     const input = event.target.value;
     if (input.length > 3) {
-        fetch(`http://localhost:3000/search?qwery=${input}`)
+        fetch(`http://localhost:3000/search?query=${input}`)
             .then(response => response.json())
             .then((data) => {
                 target.innerHTML = ""
